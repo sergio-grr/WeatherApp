@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Apptiempo
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.4.
@@ -29,3 +30,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## 29/04/2024
 
 Added menu for expansion
+=======
+# WeatherApp
+>>>>>>> ed1d53da05a947c1b366e4d034eb7a25311c3b8c
