@@ -1,0 +1,74 @@
+<div *ngIf="weatherData; else loading">
+
+
+  <div class="row" style="display: flex;">
+      <div class="col-md-6">
+<!--columna de la IZQUIERDA-->
+
+          <div class="row">
+            <div id="encabezado">
+              <h1>Clima en: {{ weatherData.name }}</h1>
+          </div>
+              <div class="col-md-6">
+                  <mat-card id="temperatura-card" class="example-card">
+                      <mat-card-content>
+                          <h2 class="text-center">
+                              <strong>Temperatura: {{ weatherData.main.temp }} °C</strong>
+                          </h2>
+                      </mat-card-content>
+                  </mat-card>
+              </div>
+
+              <div class="col-md-6">
+                  <mat-card id="descripcion-card" class="example-card">
+                      <mat-card-content>
+                          <h2 class="text-center">
+                              <strong>Descripción: {{ weatherData.weather[0].description }}</strong>
+                          </h2>
+                      </mat-card-content>
+                  </mat-card>
+              </div>
+          </div>
+
+          <div class="row">
+              <div class="col-md-6">
+                  <mat-card id="humedad-card" class="example-card">
+                      <mat-card-content>
+                          <h2 class="text-center">
+                              <strong>Humedad: {{ weatherData.main.humidity }} %</strong>
+                          </h2>
+                      </mat-card-content>
+                  </mat-card>
+              </div>
+
+              <div class="col-md-6">
+                  <mat-card id="presion-card" class="example-card">
+                      <mat-card-content>
+                          <h2 class="text-center">
+                              <strong>Presión atmosférica: {{ weatherData.main.pressure }}hPa</strong>
+                          </h2>
+                      </mat-card-content>
+                  </mat-card>
+              </div>
+          </div>
+      </div>
+<!--columna de la derecha-->
+      <div  class="col-md-6 align-content-center" *ngIf="showRecommendation">
+
+          <div id="consejo">
+              <h3>
+                  <strong id="recomendaciones">{{ activityRecommendation }}</strong>
+              </h3>
+          </div>
+
+      </div>
+
+      <div class="col-md-6" *ngIf="error">
+          <p>Error: {{ error }}</p>
+      </div>
+  </div>
+</div>
+
+<ng-template #loading></ng-template>
+
+

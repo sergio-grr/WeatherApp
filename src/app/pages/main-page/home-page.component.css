@@ -1,0 +1,19 @@
+
+mat-toolbar {
+  background-image: url(../../../assets/paredladrillo.jpg);
+  justify-content: center;
+}
+
+#titulo {
+margin-top: 10px;
+
+}
+
+.container-with-margin {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+#menu button{
+  color: rgb(248, 210, 41);
+}

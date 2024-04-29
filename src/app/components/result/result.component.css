@@ -1,0 +1,116 @@
+
+body {
+  font-family: "Shadows Into Light", cursive;
+}
+
+#encabezado {
+    background-image: url(../../../assets/fondociudad.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+#encabezado h1 {
+    font-size: 1.em;
+    margin: 0;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    margin-left: 40px;
+}
+
+mat-card{
+  width: auto;
+  height: 340px;
+  margin: 0;
+}
+
+h2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+#temperatura-card {
+  position: relative;
+  background-image: url(../../../assets/Temperatura.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#descripcion-card{
+  position: relative;
+  background-image: url(../../../assets/descripcion.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#humedad-card{
+  position: relative;
+  background-image: url(../../../assets/humedad.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#presion-card{
+  position: relative;
+  background-image: url(../../../assets/presion.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.col-3 {
+  padding: 0;
+  margin: 0; 
+}
+
+#consejo{
+  background-image: url(../../../assets/consejo.png);
+  background-size:contain;
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+
+}
+
+h3 {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 1.8rem;
+
+}
+
+
+.shadows-into-light-regular {
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+@media screen and (max-width: 768px) {
+  #consejo {
+    height: 30vh; /* Ajuste para pantallas más pequeñas */
+  }
+}
+@media screen and (max-width: 768px) {
+  h3 {
+    font-size: 1.3rem; /* Tamaño de fuente ajustado para pantallas más pequeñas */
+  }
+}
+p{
+  background-color: aqua;
+}

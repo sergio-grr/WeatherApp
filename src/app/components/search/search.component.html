@@ -1,0 +1,6 @@
+<div class="contenedor-busqueda">
+  <mat-form-field>
+    <input type="text" matInput placeholder="Buscar ciudad..." [(ngModel)]="searchText" (keyup.enter)="onSearch()">
+  </mat-form-field>
+  <button mat-raised-button color="primary" (click)="onSearch()">Buscar</button>
+</div>

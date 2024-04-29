@@ -1,0 +1,23 @@
+<mat-toolbar>
+  <span><img id="titulo" src="../../../assets/titulonav.png" style="max-width: 100%"></span>
+</mat-toolbar>
+<mat-toolbar id="menu">
+  <button mat-button>
+  <mat-icon>menu</mat-icon>
+  <h1>More Apps</h1>
+</button>
+</mat-toolbar>
+
+
+
+<div   class="container-with-margin">
+ <app-search
+   (weatherData)="handleSearchCity($event)"
+   (forecastData)="handleSearchCityForecast($event)">
+  </app-search>
+
+  <app-result [weatherData]="weather"></app-result>
+
+  <app-graphics [forecast]="forecastData" style="margin-bottom: 20px;"></app-graphics>
+
+</div>
